@@ -26,8 +26,9 @@ namespace Adding_Sound_CSharp
 
         private void FormSound_Load(object sender, EventArgs e)
         {
-            sound = new SoundPlayer(Properties.Resources.Terminator);
-            
+            //You only want to do this when absolutley necessary, not each time you play the sound
+            //You can use this line of code to change the sound that will be played
+            sound = new SoundPlayer(Properties.Resources.Terminator);   
         }
 
         private void btnLoop_Click(object sender, EventArgs e)
